@@ -11,15 +11,13 @@ import java.util.Scanner;
 
 public class BankApp {
     public static void main(String[] args) {
-        String url = "selectAll";
+        String url = "/delete";
 
         //dependency injection
         BankDAO dao = new BankDAO();
         BankController con = new BankController(dao);
-
         Dispatcher dis = new Dispatcher(con);
         dis.route(url);
-
     }
 }
 
