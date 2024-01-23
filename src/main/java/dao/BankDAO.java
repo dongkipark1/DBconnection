@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * DAO -DATA ACCESS OBJECT
- * SRP - 단말책임의 원칙
+ * SRP - 단일책임의 원칙
  */
 public class BankDAO {
     public int deleteByNumber(int number){
